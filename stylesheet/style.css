@@ -1,0 +1,48 @@
+.tab-carousel {
+  position: relative;
+  background: #222;
+  opacity: 0.6;
+  overflow-x: hidden; }
+  .tab-carousel .carousel-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    white-space: nowrap;
+    width: auto; }
+    .tab-carousel .carousel-inner .item {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      border-radius: 6px;
+      background-image: url(../image/background.jpg);
+      background-repeat: no-repeat;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+      opacity: 0.3; }
+      .tab-carousel .carousel-inner .item .arraw {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        top: 100%;
+        left: 50%;
+        margin-left: -12px;
+        border: 12px solid #fff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent; }
+      .tab-carousel .carousel-inner .item.active {
+        -webkit-transform: scale(1.1);
+        -webkit-transition: all 0.3s ease;
+        opacity: 1; }
+  .tab-carousel .carousel-control {
+    width: 5%; }
+    .tab-carousel .carousel-control.left {
+      color: #ccc;
+      background-image: none; }
+    .tab-carousel .carousel-control.right {
+      color: #ccc;
+      background-image: none; }

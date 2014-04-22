@@ -1,0 +1,5 @@
+.idea/
+.git/
+*.log
+Thumbs.db
+node_modules

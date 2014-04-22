@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tab-carousel测试页</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="stylesheet/style.css"/>
+    <style>
+        .panel{
+            width: 400px;
+            margin: 40px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-carousel-container">
+    </div>
+
+    <div class="panel">
+    <button class="delete" style="margin-right: 20px;">delete curr</button>
+    <button class="add">add one</button>
+    </div>
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="libs/jquery/jquery.mockjax.js"></script>
+    <script type="text/javascript" src="javascript/mock.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript">
+        $('.tab-carousel-container').tabCarousel();
+        $('.delete').click(function(){
+            var api = $('.tab-carousel-container').data('api');
+            api.remove( $('.tab-carousel-container').find('.active') );
+        })
+        $('.add').click(function(){
+            var api = $('.tab-carousel-container').data('api');
+            api.append( 1 );
+        })
+    </script>
+</body>
+</html>
