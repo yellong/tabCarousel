@@ -1,8 +1,7 @@
 
 .tab-carousel{
   position: relative;
-  background: #222;
-  opacity: 0.6;
+  background: #7A7A7A;
   overflow-x: hidden;
   //border-bottom: 1px solid darken(#222,40%);
 
@@ -52,6 +51,8 @@
 
   .carousel-control{
     width: 5%;
+    cursor: pointer;
+
     &.left{
       color: #ccc;
       background-image: none;

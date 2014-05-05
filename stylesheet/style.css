@@ -1,7 +1,6 @@
 .tab-carousel {
   position: relative;
-  background: #222;
-  opacity: 0.6;
+  background: #7A7A7A;
   overflow-x: hidden; }
   .tab-carousel .carousel-inner {
     position: absolute;
@@ -39,7 +38,8 @@
         -webkit-transition: all 0.3s ease;
         opacity: 1; }
   .tab-carousel .carousel-control {
-    width: 5%; }
+    width: 5%;
+    cursor: pointer; }
     .tab-carousel .carousel-control.left {
       color: #ccc;
       background-image: none; }
